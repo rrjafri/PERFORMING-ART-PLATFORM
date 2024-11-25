@@ -1,33 +1,33 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image"; // Import the Image component
+import Image from "next/image";
 
 const segments = [
   {
     name: 'BHOOK (Crowdfunding)',
-    image: '/bhook/bhook.png', // Adjusted path to reflect folder structure
+    image: '/bhook/bhook.png',
     description: 'Invest In Creativity',
     details: 'A space for artists to fund their creative projects with support from their community and patrons.',
     gradient: 'from-amber-500 to-amber-700'
   },
   {
     name: 'KHWAAB (Theatre Show Booking)',
-    image: '/khwaab/khwaab.png', // Adjusted path to reflect folder structure
+    image: '/khwaab/khwaab.png',
     description: 'Experience The Arts',
     details: 'A ticketing and event platform for theatre enthusiasts to discover and book live performances and workshops.',
     gradient: 'from-emerald-500 to-emerald-700'
   },
   {
     name: 'ZID (Venue-Artist Aggregation)',
-    image: '/zid/zid.png', // Adjusted path to reflect folder structure
+    image: '/zid/zid.png',
     description: 'Connect And Create',
     details: 'A platform matching artists with venues for performances, workshops, and collaborations.',
     gradient: 'from-sky-500 to-sky-700'
   },
   {
     name: 'RIFAQAT (Community Building)',
-    image: '/rifaqat/rifaqat.png', // Adjusted path to reflect folder structure
+    image: '/rifaqat/rifaqat.png',
     description: 'Network And Grow',
     details: 'A social networking hub where artists connect, collaborate, and grow together through mentorship and shared interests.',
     gradient: 'from-purple-500 to-purple-700'
@@ -71,12 +71,11 @@ export default function HomePage() {
                 <Link href={`/segment/${segment.name.toLowerCase()}`}>
                   <div className="relative aspect-video mb-4 overflow-hidden rounded-lg">
                     <div className={`absolute inset-0 bg-gradient-to-br ${segment.gradient} opacity-10 group-hover:opacity-20 transition-opacity duration-300`} />
-                    {/* Use the Image component from Next.js */}
                     <Image
                       src={segment.image}
                       alt={segment.name}
-                      width={500} // Specify appropriate width
-                      height={300} // Specify appropriate height
+                      width={500}
+                      height={300}
                       className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
@@ -96,3 +95,4 @@ export default function HomePage() {
     </div>
   );
 }
+
