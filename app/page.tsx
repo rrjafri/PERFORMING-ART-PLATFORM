@@ -68,7 +68,7 @@ export default function HomePage() {
               className="group overflow-hidden bg-white/80 backdrop-blur-sm hover:bg-white transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-1"
             >
               <CardContent className="p-6">
-                <Link href={`/segment/${segment.name.toLowerCase()}`}>
+                <Link href={`/segment/${segment.name.split(' ')[0].toLowerCase()}`}>
                   <div className="relative aspect-video mb-4 overflow-hidden rounded-lg">
                     <div className={`absolute inset-0 bg-gradient-to-br ${segment.gradient} opacity-10 group-hover:opacity-20 transition-opacity duration-300`} />
                     <Image
