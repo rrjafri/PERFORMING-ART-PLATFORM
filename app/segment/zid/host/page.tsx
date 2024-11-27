@@ -34,7 +34,7 @@ export default function ZidHostPage() {
         <div className="container flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-amber-800 bg-clip-text text-transparent">
-              Performing Arts Platform
+              Charche
             </span>
           </Link>
           <nav className="flex items-center space-x-4">

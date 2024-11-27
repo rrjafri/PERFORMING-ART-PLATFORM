@@ -8,7 +8,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Performing Arts Platform',
+  title: 'Charche',
   description: 'A platform for performing arts enthusiasts',
 }
 

@@ -84,9 +84,10 @@ export default function SignupPage() {
                   <SelectValue placeholder="Select your role" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="audience">Audience Member</SelectItem>
-                  <SelectItem value="artist">Artist</SelectItem>
-                  <SelectItem value="host">Space Host</SelectItem>
+                  <SelectItem value="Performer"> Performer</SelectItem>
+                  <SelectItem value="Aspiring Performer">Aspiring Performer</SelectItem>
+                  <SelectItem value="Non Performer">Non Performer</SelectItem>
+                  <SelectItem value="host">host</SelectItem>
                 </SelectContent>
               </Select>
             </div>
